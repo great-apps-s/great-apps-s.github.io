@@ -1,0 +1,9 @@
+#EXTM3U url-tvg="https://great-apps-s.github.io/matinee/demo/guide.xml"
+#EXTINF:-1 tvg-id="demo.bunny" tvg-name="Open Movie · Big Buck Bunny" group-title="Movies",Open Movie · Big Buck Bunny
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="demo.live" tvg-name="Live Test · Akamai" group-title="Live",Live Test · Akamai
+https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8
+#EXTINF:-1 tvg-id="demo.pattern" tvg-name="Test Pattern · HD" group-title="Test",Test Pattern · HD
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
+#EXTINF:-1 tvg-id="demo.pattern.sd" tvg-name="Test Pattern · SD" group-title="Test",Test Pattern · SD
+https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8
