@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Matinee</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0 auto; padding: 40px 20px 80px; max-width: 46rem;
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         color: #0D1A1C; background: #EEF2F1; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #F1ECE2; background: #0A1113; }
+    td, th { border-color: #243235 !important; }
+    a { color: #4FB6C0 !important; }
+  }
+  h1 { font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 0.75rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+  td, th { border: 1px solid #D3DDDC; padding: 8px 10px; text-align: left; }
+  a { color: #0E5E68; overflow-wrap: anywhere; }
+  td { overflow-wrap: anywhere; }
+  strong { font-weight: 600; }
+</style>
+</head><body>
+<h1>Privacy Policy</h1>
+<p><strong>Matinee: Car Video Player</strong> — published by Sergiu Silosiev</p>
+<p>Effective 31 October 2026</p>
+<p>Matinee plays videos you already have — clips from your iPhone, your own Plex, Jellyfin or Emby server, IPTV playlists you subscribe to, folders on your home network — on your iPhone and, while the car is parked, on your car&#x27;s screen through CarPlay. To do that it keeps a few things you give it: server addresses, logins, playlist links, where you stopped watching. This page says exactly what happens to each of them.</p>
+<p>Short version: <strong>there is no account, and we run no server that receives your data.</strong> Matinee talks directly to the servers, playlists and folders you add — nothing goes through us. Your sources, logins, watch history and downloads stay on your iPhone. The one outside service the app uses for itself is Adapty, which handles purchases and never sees your videos, your servers or what you watch.</p>
+<h2>At a glance</h2>
+<table><tr><th>What</th><th>Leaves your iPhone?</th></tr><tr><td>Videos you pick from Photos or Files</td><td><strong>No</strong> — copied into the app&#x27;s storage on your iPhone</td></tr><tr><td>Server addresses, playlist and TV-guide links, your library and channel lists, the TV guide</td><td>Matinee contacts <strong>only the addresses you entered</strong>, directly. Never to us, never to Adapty</td></tr><tr><td>Usernames, passwords and sign-in tokens for your servers and playlists</td><td>Stored in the <strong>iOS Keychain on this iPhone only</strong>; sent only to the server they belong to</td></tr><tr><td>Where you stopped watching, recent searches, downloads, kids mode choices</td><td><strong>Stay on your iPhone.</strong> Where you stopped is also sent back to your own Plex, Jellyfin or Emby server, as any player for those servers does</td></tr><tr><td>Camera</td><td>Used only to read a QR code with a playlist link. <strong>No picture is saved or sent</strong></td></tr><tr><td>Your name, email, phone number, contacts, location</td><td><strong>Not collected at all</strong></td></tr><tr><td>Purchase receipt, a random installation ID, basic device details, app opens</td><td>Yes — to our purchase provider, <strong>Adapty</strong>, so a purchase works</td></tr><tr><td>Advertising identifier (IDFA), cross-app tracking, analytics SDKs, ads, crash reporting</td><td><strong>Not used, not collected</strong></td></tr></table>
+<h2>Who we are</h2>
+<p>Sergiu Silosiev is the publisher of Matinee and the data controller for the processing described here.</p>
+<p>Questions, requests, complaints: <a href="mailto:sergiusil@proton.me">sergiusil@proton.me</a>.</p>
+<h2>There is no account</h2>
+<p>Matinee has no sign-up and no login of its own. We never ask for your email address, phone number or date of birth, and we have no way to link what the app does to who you are. The only sign-ins in the app are to your own servers and services, described below.</p>
+<h2>Videos from this iPhone</h2>
+<p>Matinee uses Apple&#x27;s system picker for Photos and for Files. <strong>The app has no access to your photo library</strong>: it receives only the videos you pick, one choice at a time.</p>
+<p>Each video you pick is copied into the app&#x27;s storage on your iPhone so that it can play on your car&#x27;s screen while the phone is locked. The copy is kept out of your iCloud backup. Your original stays in Photos or Files, untouched. Videos are never uploaded anywhere. To show a thumbnail, the app takes a still frame from the video and keeps it on the iPhone.</p>
+<h2>Your servers, playlists and folders</h2>
+<p>Matinee contains no films, shows or channels. Everything you watch comes from a source you add, and <strong>the app connects to that source directly from your iPhone</strong> — there is no server or proxy of ours in between, and we never receive the addresses, logins or content.</p>
+<p>What each kind of source receives:</p>
+<ul><li><strong>Plex.</strong> You sign in on plex.tv with a short code; <strong>your Plex password never goes through Matinee.</strong> Matinee asks plex.tv for that code, then for your servers and whether your account has Plex Pass. plex.tv returns a sign-in token, which Matinee keeps in the Keychain. When your server is away from home, Plex may carry the connection through its own relay. plex.tv and the relay are run by Plex under Plex&#x27;s privacy policy (<a href="https://www.plex.tv/about/privacy-legal/">https://www.plex.tv/about/privacy-legal/</a>).</li><li><strong>Jellyfin and Emby.</strong> Your username and password go directly to the server address you typed, or you approve the app with Quick Connect on your server. Matinee keeps only the sign-in token the server returns, not your password.</li><li><strong>IPTV playlists and Xtream logins.</strong> Matinee downloads the playlist link or reads the file you choose, and downloads the TV guide (XMLTV) link if there is one. An Xtream login is sent to that provider&#x27;s server — the Xtream system puts the username and password inside the address of every stream, so they travel with each request to that provider. The playlist link, the guide link and an Xtream login are kept in the Keychain.</li><li><strong>Network folders (SMB, WebDAV).</strong> The username and password you enter go only to that folder&#x27;s server and are kept in the Keychain.</li></ul>
+<p>So that your server can list Matinee among its devices, the app sends it the name &quot;Matinee&quot;, the words &quot;iPhone&quot; and &quot;iOS&quot;, and a random identifier that Matinee creates on first launch. It is not tied to your device, your Apple ID or you, and a new one is made after <strong>Delete all my data</strong>.</p>
+<p>When you stop a video from Plex, Jellyfin or Emby, Matinee tells that server where you stopped, so that you can continue on your TV or another app. Matinee also refreshes your playlists and TV guides from the same addresses now and then, including in the background when iOS allows it.</p>
+<p><strong>Encryption.</strong> Matinee uses whatever the address you entered uses. Home servers and many IPTV services use plain http://, which is not encrypted; if your server offers https://, enter that.</p>
+<p>These servers and services are run by you or by whoever provides them, under their own terms. Matinee does not choose them, does not monitor them, and has no control over what they do with the requests they receive.</p>
+<h2>Local network</h2>
+<p>To reach servers and folders at home, iOS asks you once whether Matinee may find and connect to devices on your local network. The app uses it to connect to the addresses you add and to look for shared folders (SMB and WebDAV) on your network. Nothing found this way is sent outside your network. You can change it in Settings → Privacy &amp; Security → Local Network → Matinee.</p>
+<h2>Camera</h2>
+<p>The camera is used for one thing: reading a QR code that contains a playlist link. iOS asks for permission the first time you choose <strong>QR code</strong>. The picture is read on the iPhone as you point it; no photo or video is recorded, stored or sent. You can choose a screenshot with a QR code instead — the app then receives only that one image through the system picker and does not keep it.</p>
+<h2>Kids mode</h2>
+<p>The kids mode PIN is never stored as typed: the app keeps a one-way scrambled form of it in the Keychain on this iPhone. After five wrong tries, kids mode pauses for 30 seconds. If you tap <strong>Forgot?</strong>, iOS asks for your iPhone passcode or Face ID / Touch ID; Matinee only learns whether you passed, never your passcode or anything about your face or fingerprint. Kids mode collects nothing about the child using it.</p>
+<h2>Your car&#x27;s screen</h2>
+<p>When your iPhone connects to CarPlay, Matinee learns that a car is connected and whether that car can show video. It does not know where the car is, how fast it is going, or which car it is by name or registration. Whether video or only sound plays at the moment is decided by iOS and your car; Matinee only reflects it.</p>
+<p>The app remembers on the iPhone that a car has connected and when it last disconnected, so that it can offer to continue where you stopped. For its own on-device log it also makes a scrambled, one-way code of the car&#x27;s audio connection; that code cannot be turned back into anything about the car and never leaves the iPhone.</p>
+<h2>What the app keeps on your iPhone</h2>
+<p>On the iPhone, in the app&#x27;s own storage, protected by iOS file encryption:</p>
+<ul><li>the list of your sources, your libraries, channel lists and TV guide;</li><li>where you stopped in each video, and what you are part-way through;</li><li>videos you imported and downloads you made, plus thumbnail frames and temporary copies prepared for playback;</li><li>kids mode choices, your playback and subtitle settings, recent searches, and markers such as whether you finished onboarding, whether your free video on the car screen has been used, and the last answer about your Pro access;</li><li>in the Keychain: logins, sign-in tokens, playlist and guide links, the kids mode PIN in scrambled form.</li></ul>
+<p>Keychain items are kept <strong>on this device only</strong> — they are not synced to iCloud Keychain and do not move to a new iPhone. Imported videos and downloads are kept out of your iCloud backup. The rest of the app&#x27;s data may be included in your iPhone&#x27;s own backup, like any app&#x27;s.</p>
+<p>None of this leaves the device, except as described under <strong>Your servers, playlists and folders</strong> and <strong>Subscriptions and payments</strong>.</p>
+<h2>Subscriptions and payments</h2>
+<p>Purchases are made through Apple. <strong>We never see your card number, and Apple does not give it to us.</strong></p>
+<p>Purchases and access to Matinee Pro are managed for us by <strong>Adapty</strong> (<a href="https://adapty.io/privacy">https://adapty.io/privacy</a>). So that a purchase is recognised, restored after a reinstall and shown correctly, Adapty receives:</p>
+<ul><li>the App Store purchase receipt and purchase history;</li><li>a random identifier that Adapty creates for this installation — it identifies the installation, not you;</li><li>the identifier iOS gives to apps from one publisher (IDFV), the device model, iOS version, language, region, time zone and app version;</li><li>when the app is opened, and its requests for the plans and prices to show.</li></ul>
+<p>We have configured Adapty <strong>not to collect the advertising identifier (IDFA)</strong> and <strong>not to record your IP address</strong> in the purchase profile. Adapty receives no videos, no server addresses, no logins, no playlists and nothing about what you watch. We do not give Adapty your name or email — we do not have them.</p>
+<p>Apple&#x27;s own handling of your purchase is covered by Apple&#x27;s privacy policy (<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>).</p>
+<h2>Analytics, advertising and tracking</h2>
+<p>Matinee contains <strong>no analytics SDK, no advertising SDK, no attribution SDK and no crash-reporting SDK</strong>. The app writes short technical notes about its own work — for example &quot;playback started, source type: playlist&quot; — to the iPhone&#x27;s system log, on the device, to help find faults. They contain no titles, addresses, file names or search text, and they are not sent to us or to anyone.</p>
+<p>We do not track you across other companies&#x27; apps or websites and we do not use the advertising identifier, so the app never shows Apple&#x27;s App Tracking Transparency prompt. We do not sell or share personal information.</p>
+<p>If you have turned on &quot;Share With App Developers&quot; in iOS, Apple may give us anonymous crash reports and usage statistics under Apple&#x27;s terms; you can turn this off in Settings → Privacy &amp; Security → Analytics &amp; Improvements.</p>
+<h2>These web pages</h2>
+<p>This policy, the terms and the support page are hosted on GitHub Pages. When you open them — including from inside the app — GitHub serves the page and may log technical data such as your IP address under GitHub&#x27;s privacy statement. We do not run analytics on these pages and do not receive those logs.</p>
+<h2>How long anything is kept</h2>
+<table><tr><th>What</th><th>Where</th><th>For how long</th></tr><tr><td>Sources, libraries, channel lists, TV guide, watch positions, settings, recent searches</td><td>your iPhone</td><td>until you remove the source, use <strong>Delete all my data</strong>, or delete the app. Lists and the guide are replaced at each refresh</td></tr><tr><td>Imported videos and downloads</td><td>your iPhone</td><td>until you remove them, remove their source, use <strong>Delete all my data</strong>, or delete the app</td></tr><tr><td>Logins, tokens, links, kids mode PIN</td><td>Keychain on your iPhone</td><td>until you remove that source, use <strong>Delete all my data</strong>, or delete the app</td></tr><tr><td>Requests to your servers, plex.tv and IPTV providers</td><td>those servers</td><td>under the terms of whoever runs them; we never receive them</td></tr><tr><td>Purchase receipt, installation ID, device details, app opens</td><td>Adapty</td><td>while purchases are managed for us, under Adapty&#x27;s policy, or until you ask us to delete them</td></tr></table>
+<h2>Deleting your data</h2>
+<p>In Matinee, <strong>Settings → Delete all my data</strong> removes from this iPhone your sources, logins and tokens, watch history, imported videos, downloads, kids mode and settings. Removing a single source removes its videos, downloads and saved login. Deleting the app erases everything it kept.</p>
+<p>Your servers keep their own record that Matinee signed in to them. To end that too, remove Matinee from your server or account: on Plex at plex.tv → Settings → Authorized Devices; on Jellyfin or Emby in the server&#x27;s dashboard under Devices.</p>
+<p><strong>Delete all my data</strong> does not touch your purchase: Pro stays with your Apple Account. To have the purchase records held by Adapty deleted, write to <a href="mailto:sergiusil@proton.me">sergiusil@proton.me</a> and say roughly when you bought; we will have Adapty delete that profile and confirm to you within one month. Apple&#x27;s own records of your purchase are governed by Apple. Deleting the app does not cancel a subscription — see the Terms of Use.</p>
+<h2>Children</h2>
+<p>Matinee is not directed to children under 13, and we do not knowingly process the personal data of a child. Kids mode is a tool for parents to limit what is shown; it collects nothing about the child. If you believe a child&#x27;s data has reached us, write to <a href="mailto:sergiusil@proton.me">sergiusil@proton.me</a> and we will delete it.</p>
+<h2>Your rights</h2>
+<p>Depending on where you live, you may have the right to ask what personal data we hold about you, to have it corrected or erased, to object to or restrict its processing, to receive it in portable form, to withdraw consent, and to complain to your data protection authority. In California and other US states with privacy laws you have the right to know, to delete, to correct, and to opt out of the sale or sharing of personal information — <strong>we do not sell or share personal information, and never have.</strong> We will not treat you differently for using these rights.</p>
+<p>Write to <a href="mailto:sergiusil@proton.me">sergiusil@proton.me</a>. Without an account we usually hold nothing that identifies you, so the honest answer to &quot;what do you have on me&quot; is normally &quot;nothing&quot;, plus whatever Adapty holds about a purchase, which we can retrieve or delete for you.</p>
+<h2>Legal basis (for users in the EEA and the UK)</h2>
+<p>Your sources, logins and history are processed on your iPhone only to provide the player you asked for. The camera and the local network are used only with the permission you give in iOS, which you can withdraw at any time. Purchase data is processed to perform the purchase contract and to meet our legal obligations.</p>
+<p>Apple and Adapty may process data in countries other than yours, including the United States, under their own safeguards for international transfers.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version is published here with a new effective date. If a change ever means anything leaving your iPhone that does not leave it today, the app will tell you before it happens.</p>
+<h2>Contact</h2>
+<p>Sergiu Silosiev</p>
+<p><a href="mailto:sergiusil@proton.me">sergiusil@proton.me</a></p>
+<p>Terms of Use: <a href="https://great-apps-s.github.io/matinee/terms">https://great-apps-s.github.io/matinee/terms</a> · Support: <a href="https://great-apps-s.github.io/matinee/support">https://great-apps-s.github.io/matinee/support</a></p>
+</body></html>
